@@ -2,6 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
+## makeCacheMatrix creates a special “matrix”, which is really a list containing a function to:
+## set the elements of the matrix
+## get the elements of the matrix
+## set the elements of the matrix inverse
+## get the elements of the matrix inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Write a short comment describing this function
-
+## calculates the inverse of the special “matrix” created with the above function
 cacheinverse <- function(x, ...) {
   inv <- x$getinverse()
   if(!is.null(inv)) {
